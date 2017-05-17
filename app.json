@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/weather/weather"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天气查询demo",
+    "navigationBarTextStyle":"black"
+  }
+}

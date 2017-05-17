@@ -1,0 +1,22 @@
+<!--main.wxml-->
+<view class="page">
+    <view class="container">
+        <view class="section">
+            <view class="section__title">请输入您要查询的城市名称</view>
+            <input  bindinput="bindKeyInput" placeholder="请输入要查询的城市名称" value="{{inputValue}}"/>
+        </view>
+        <view class="btn-area">
+        <button type="primary" bindtap="searchMsg">查询</button>
+        <button bindtap="resetMsg">重置</button>
+        </view>
+        <view class="show-msg" hidden="{{hidden}}">
+          <view class="classname">city : {{city.city}}</view>
+          <view class="classname">temp : {{city.temp}}</view>
+          <view class="classname">weather : {{city.weather}}</view>
+          <view class="classname">wind : {{city.wind}}</view>
+        </view>
+        <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+           您查看的信息不不存在！
+        </modal>
+    </view>
+</view>
